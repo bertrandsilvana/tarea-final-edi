@@ -52,7 +52,7 @@ export class EmpleadosService {
 eliminarempleado(id: number){
     for (let index = 0; index < this.empleados.length; index++) {
         if(id == this.empleados[index].id) {
-            this.empleados.splice(id,1);
+            this.empleados.splice(index,1);
             return "empleado eliminado";
         } 
     }
