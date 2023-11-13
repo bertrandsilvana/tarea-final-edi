@@ -43,9 +43,9 @@ export class EmpleadosService {
             if (id == this.empleados[index].id) {
                 this.empleados[index].salario = empleadoModel.salario;
                 return "modifique el salario";   
-            } else {
-                return " no se pudo modificar";
-            }
+            } 
+            
+            return " no se pudo modificar";
         }
     }
 eliminarempleado(id: number){
