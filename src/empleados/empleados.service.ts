@@ -45,8 +45,9 @@ export class EmpleadosService {
                 return "modifique el salario";   
             } 
             
-            return " no se pudo modificar";
+        
         }
+        return " no se pudo modificar";
     }
 eliminarempleado(id: number){
     for (let index = 0; index < this.empleados.length; index++) {
