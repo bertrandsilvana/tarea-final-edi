@@ -40,7 +40,7 @@ export class EmpleadosService {
     }
     modificarempleado(id: string, empleadoModel:empleadoModel){
         for (let index = 0; index < this.empleados.length; index++) {
-            if (id = this.empleados[index]) {
+            if (id = this.empleados[index].id) {
                 this.empleados[index].salario = empleadoModel.salario;
                 return "modifique el salario";   
             } else {
@@ -50,7 +50,7 @@ export class EmpleadosService {
     }
 eliminarempleado(id: number){
     for (let index = 0; index < this.empleados.length; index++) {
-        if(id = this.empleados[index]) {
+        if(id = this.empleados[index].id) {
             this.empleados.splice(id,1);
             return "empleado eliminado";
         } 
